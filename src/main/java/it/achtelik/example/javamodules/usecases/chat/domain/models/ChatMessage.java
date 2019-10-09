@@ -1,11 +1,8 @@
-package it.achtelik.example.javamodules.usecases.chat;
-
-import com.fasterxml.jackson.annotation.JsonCreator;
+package it.achtelik.example.javamodules.usecases.chat.domain.models;
 
 public class ChatMessage {
     private final String text;
-
-    @JsonCreator
+    
     public ChatMessage(String text) {
         this.text = text;
     }

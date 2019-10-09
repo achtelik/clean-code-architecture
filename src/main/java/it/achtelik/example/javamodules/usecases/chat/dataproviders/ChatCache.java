@@ -1,4 +1,6 @@
-package it.achtelik.example.javamodules.usecases.chat;
+package it.achtelik.example.javamodules.usecases.chat.dataproviders;
+
+import it.achtelik.example.javamodules.usecases.chat.domain.models.ChatMessage;
 
 import java.util.LinkedList;
 
