@@ -1,13 +1,16 @@
 package it.achtelik.example.javamodules.usecases.chat;
 
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
-@Service
 public class ChatService {
 
-    public List<String> getChatHistory(){
+    private final ChatCache chatCache = new ChatCache();
 
+    public boolean saveMessage(ChatMessage message) {
+        return chatCache.writeMessage(message);
+    }
+
+    public List<ChatMessage> loadMessages() {
+        return chatCache.readMessages();
     }
 }

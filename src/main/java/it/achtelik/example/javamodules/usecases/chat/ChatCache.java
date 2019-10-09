@@ -1,12 +1,17 @@
 package it.achtelik.example.javamodules.usecases.chat;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class ChatCache {
-    public static List<String> messages = new LinkedList<>();
+    public static LinkedList<ChatMessage> messages = new LinkedList<>();
 
-    public boolean writeMessage(String message) {
-        messages.add()
+    public boolean writeMessage(ChatMessage message) {
+        synchronized (messages) {
+            return messages.add(message);
+        }
+    }
+
+    public LinkedList<ChatMessage> readMessages() {
+        return messages;
     }
 }

@@ -11,6 +11,6 @@ public class ServerInfoController {
 
     @GetMapping("/server-info")
     public ResponseEntity<String> getServerInfo() {
-        return new ResponseEntity<String>("Up", HttpHeaders.EMPTY, HttpStatus.OK);
+        return new ResponseEntity<>("Up", HttpHeaders.EMPTY, HttpStatus.OK);
     }
 }
