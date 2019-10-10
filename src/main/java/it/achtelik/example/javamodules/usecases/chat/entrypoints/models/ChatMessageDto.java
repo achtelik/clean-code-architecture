@@ -1,4 +1,4 @@
-package it.achtelik.example.javamodules.usecases.chat.entrypoints;
+package it.achtelik.example.javamodules.usecases.chat.entrypoints.models;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

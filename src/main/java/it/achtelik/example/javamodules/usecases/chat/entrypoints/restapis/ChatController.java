@@ -1,6 +1,8 @@
-package it.achtelik.example.javamodules.usecases.chat.entrypoints;
+package it.achtelik.example.javamodules.usecases.chat.entrypoints.restapis;
 
 import it.achtelik.example.javamodules.usecases.chat.domain.services.ChatService;
+import it.achtelik.example.javamodules.usecases.chat.entrypoints.mappers.ChatMessageDtoMapper;
+import it.achtelik.example.javamodules.usecases.chat.entrypoints.models.ChatMessageDto;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

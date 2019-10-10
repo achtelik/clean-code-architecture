@@ -1,6 +1,7 @@
-package it.achtelik.example.javamodules.usecases.chat.entrypoints;
+package it.achtelik.example.javamodules.usecases.chat.entrypoints.mappers;
 
 import it.achtelik.example.javamodules.usecases.chat.domain.models.ChatMessage;
+import it.achtelik.example.javamodules.usecases.chat.entrypoints.models.ChatMessageDto;
 
 import java.util.List;
 import java.util.stream.Collectors;

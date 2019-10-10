@@ -1,4 +1,4 @@
-package it.achtelik.example.javamodules.usecases.serverinfo;
+package it.achtelik.example.javamodules.usecases.serverinfo.entrypoints.restapis;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
