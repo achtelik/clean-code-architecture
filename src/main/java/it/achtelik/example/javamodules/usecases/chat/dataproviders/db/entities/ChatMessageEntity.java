@@ -13,6 +13,13 @@ public class ChatMessageEntity extends AbstractEntity {
 
     private String text;
 
+    private ChatMessageEntity() {
+    }
+
+    public ChatMessageEntity(String text) {
+        this.text = text;
+    }
+
     public String getText() {
         return text;
     }

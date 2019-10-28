@@ -16,11 +16,16 @@ import java.util.List;
 @RestController
 public class ChatController {
 
-    private final ChatService chatService = new ChatService();
+    private final ChatService chatService;
+
+    public ChatController(ChatService chatService) {
+        this.chatService = chatService;
+    }
 
     @PutMapping("/chat")
-    public ResponseEntity<Boolean> putMessage(@RequestBody ChatMessageDto message) {
-        return new ResponseEntity<>(chatService.saveMessage(ChatMessageDtoMapper.toChatMessage(message)),
+    public ResponseEntity<ChatMessageDto> putMessage(@RequestBody ChatMessageDto message) {
+        return new ResponseEntity<>(ChatMessageDtoMapper.fromChatMessage(
+                chatService.saveMessage(ChatMessageDtoMapper.toChatMessage(message))),
                 HttpHeaders.EMPTY, HttpStatus.OK);
     }
 

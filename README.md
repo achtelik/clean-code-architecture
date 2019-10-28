@@ -13,6 +13,10 @@ https://blog.jayway.com/2010/03/28/architectural-enforcement-with-aid-of-aspectj
 
 https://blog.jayway.com/2010/03/28/architectural-enforcement-with-aid-of-aspectj/
 
+## Clean Code
+* https://medium.com/slalom-engineering/clean-architecture-with-java-11-f78bba431041
+* https://dzone.com/articles/remembering-clean-architecture
+
 ### ArchUnit
 https://www.maibornwolff.de/blog/archunit-architektur-absichern-java
 

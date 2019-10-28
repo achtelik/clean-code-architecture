@@ -1,6 +1,9 @@
 package it.achtelik.example.javamodules.application.dataproviders.db.entities;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.time.Instant;
 
 @MappedSuperclass
@@ -9,13 +12,13 @@ public abstract class AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ID_SEQ")
     protected Long id;
-    @Column(nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    //@NotNull
     protected Instant createDate = Instant.now();
-    @Column(nullable = false)
+    //@NotNull
     protected String createBy;
-    @Column(nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    //@NotNull
     protected Instant lastModifiedDate = Instant.now();
-    @Column(nullable = false)
+    //@NotNull
     protected String lastModifiedBy;
 
     public Long getId() {
